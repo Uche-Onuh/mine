@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/faa63b78a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="shortcut icon" type="image/png" href="images/oge by oge logo.png">
+    <title>About</title>
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <a href="index.html"><img src="images/oge by oge logo.png" alt="ogelogo"></a>
+        </div>
+        <div class="showcase-nav">
+            <a href="index.html"><p>home</p></a>
+            <h3><i class= "fas fa-chevron-right btn-icon"></i></h3>
+            <a href="about.html"><p>oge by oge - about us</p></a>
+        </div>
+    </header>
+
+    <section class="location ">
+        <div class="describe">
+            <p>Store Located at: Chief Suala Ndakola street, Alaguntan, Ikota,Lagos </p>
+        </div>
+
+        <div id="map"></div>
+       <script>
+           function initMap(){
+               var options = {
+                   zoom:13,
+                   center: {lat:6.467314211734583,lng:3.5626069020382025}
+               }
+
+               var map = new google.maps.Map(document.getElementById('map'), options)
+           
+
+           var marker = new google.maps.Marker({
+               position:{lat:6.459503779838256,lng:3.5663835773856585},
+               map:map
+           });
+        }
+       </script>
+       
+       <script async
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLbsWmnw1OA_J0VOwgBtnY1eKwrHdRdOg&callback=initMap">
+       </script>
+     
+    </section>
+
+    <section id="about" class="container">
+        <h1>about us</h1>
+        <p> Oge by Oge women's wear
+            fashion design and training
+            institute, we provide hands-on
+            result driven practice-based
+            training program designed
+            ideally to meet the learning
+            needs a persons with little or no
+            experience as well as fashion
+            forwards who already have
+            some level of experience, and
+            wish to update or advance
+            their skills or knowledge base
+            with modern techniques</p>
+        <img src="images/oge by oge CEO portrait.png" alt="ceo" >
+    </section>
+    
+
+
+
+
+
+    <footer class="footer">
+        <section class="footer-base">
+            <p>Oge by Oge, Copyright &copy; 2021</p>
+
+            <div class="social-menu">
+                <ul>
+                    <li><a href="https://www.facebook.com/OgebyOge"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/oge_by_oge"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/oge_by_oge_/"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
